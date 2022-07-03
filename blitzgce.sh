@@ -61,7 +61,7 @@ EOF
     case $typed in
     1)
         echo ""
-        gcloud auth login --no-launch-browser --verbosity error --quiet
+        gcloud auth login --no-browser --verbosity error --quiet
         echo "NOT-SET" >/var/plexguide/project.id
         echo "on" >/var/plexguide/project.switch
         ### note --no-user-output-enabled | gcloud auth login --enable-gdrive-access --brief

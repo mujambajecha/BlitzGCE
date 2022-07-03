@@ -78,14 +78,14 @@ EOF
   ### Deploys the PG Template
   gcloud compute instance-templates create pg-gce-blueprint \
     --custom-cpu $processor --custom-memory $ramcount \
-    --image-family ubuntu-1804-lts --image-project ubuntu-os-cloud \
+    --image-family ubuntu-2004-lts --image-project ubuntu-os-cloud \
     --boot-disk-auto-delete --boot-disk-size 200GB \
     $(tail /var/plexguide/deploy.nvme)
 
   # ### Deploys the PG Template
   #gcloud compute instance-templates create pg-gce-blueprint \
   # --custom-cpu $processor --custom-memory $ramcount \
-  # --image-family ubuntu-1804-lts --image-project ubuntu-os-cloud \
+  # --image-family ubuntu-2004-lts --image-project ubuntu-os-cloud \
   # --boot-disk-auto-delete --boot-disk-size 200GB \
 
   ### Deploy the GCE Server
